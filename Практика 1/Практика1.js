@@ -1,6 +1,5 @@
 "use srtict";
 let numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели ", "");
-console.log(numberOfFilms);
 let personalMovieDB = {
     count: numberOfFilms,
     movies: {},
@@ -14,4 +13,4 @@ let movielastone2 = prompt("Второй из последних просмот�
 let scoremovie2 = prompt("Насколько вы его оцените", "");
 personalMovieDB.movies[movielastone1] = scoremovie1;
 personalMovieDB.movies[movielastone2] = scoremovie2;
-console.log(personalMovieDB.movies);
+console.log(personalMovieDB);
