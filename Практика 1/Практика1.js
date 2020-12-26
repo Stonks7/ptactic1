@@ -6,19 +6,19 @@ let personalMovieDB = {
     genres: [],
     privat: false,
     start: function () {
-        personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели ", "").toLowerCase();
+        personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели ", "");
         while (
             personalMovieDB.count == "" ||
             personalMovieDB.count == null ||
             isNaN(personalMovieDB.count)
         ) {
-            personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели ", "").toLowerCase();
+            personalMovieDB.count = +prompt("Сколько фильмов вы уже посмотрели ", "");
         }
     },
     rememberMyFilms: function () {
         for (personalMovieDB.count; personalMovieDB.count > 0; personalMovieDB.count--) {
-            let movielastone = prompt("Как называется этот фильм", "").toLowerCase();
-            let scoremovie = +prompt("Насколько вы его оцените", "").toLowerCase();
+            let movielastone = prompt("Как называется этот фильм", "");
+            let scoremovie = +prompt("Насколько вы его оцените", "");
             if (
                 movielastone != null &&
                 scoremovie != null &&
