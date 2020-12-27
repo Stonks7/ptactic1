@@ -1,6 +1,6 @@
 "use srtict";
 let personalMovieDB = {
-    count: 0,
+    count: -1,
     movies: {},
     actors: {},
     genres: [],
